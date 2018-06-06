@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3327dc7f-4076-4664-9c11-e0bf261c9e2d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/analyze.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classified_emails.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/different.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/email.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/found_url_2_.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/urls_of_scraped_emails.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/urls_of_scraped_emails_.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/urls_without_emails.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate_emails.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="generate_emails.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generate_emails.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
@@ -41,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="found_url_2.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="found_url_2.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/found_url_2.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-312185">
@@ -290,7 +282,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40991536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26108727" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26108727" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -582,14 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generate_emails.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urls_without_emails.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -626,6 +610,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-312185">
           <caret line="1742" column="0" lean-forward="false" selection-start-line="1742" selection-start-column="0" selection-end-line="1742" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_emails.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding />
         </state>
       </provider>
