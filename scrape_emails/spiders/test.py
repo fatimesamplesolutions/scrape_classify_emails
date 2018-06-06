@@ -31,6 +31,8 @@ class TestSpider(scrapy.Spider):
     def start_requests(self):
         for u in self.start_urls:
             yield scrapy.Request(u, callback=self.parse_httpbin, errback=self.errback_httpbin, dont_filter=True)
+
+
     def parse_httpbin(self, response):
 
         self.handle_status_codes(response)

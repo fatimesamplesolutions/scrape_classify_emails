@@ -22,7 +22,7 @@ class ScrapeEmailSpider(scrapy.Spider):
     allowed_domains = [start_urls]
     f.close()
 
-    handle_httpstatus_list = range(200, 600)
+    handle_httpstatufs_list = range(200, 600)
     # handle_httpstatus_all=True
 
     bad_log_file = 'b.csv'
