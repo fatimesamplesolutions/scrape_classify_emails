@@ -3,16 +3,16 @@ from pprint import pprint
 import urllib.parse
 
 
-def truncate_url_return_domain():
-    with open('urls_of_scraped_emails.csv', 'r') as readfile, open('urls_of_scraped_emails_.csv', 'w') as writefile:
+def truncate_url_return_domain(input_file):
+    with open(input_file, 'r') as readfile, open('urls_of_scraped_emails_.csv', 'w') as writefile:
         for line in readfile.readlines():
             parsed_uri_ = urllib.parse.urlparse(line.strip())
             domain = '{uri.scheme}://{uri.netloc}/\n'.format(uri=parsed_uri_)
             writefile.write(domain)
             print(domain)
 
-def compare_two_fucking_csv_files():
-    with open('found_url_2_.csv', 'r') as all_urls, open('urls_of_scraped_emails_.csv', 'r') as scraped_urls:
+def compare_two_fucking_csv_files(first_file,second_file):
+    with open(first_file, 'r') as all_urls, open(second_file, 'r') as scraped_urls:
         difference = set(all_urls) - set(scraped_urls)
         print(difference)
 
@@ -20,11 +20,12 @@ def compare_two_fucking_csv_files():
             for line in difference:
                 save_difference.write(line)
 
-# truncate_url_return_domain()
-# compare_two_fucking_csv_files()
+# truncate_url_return_domain('urls_of_scraped_emails.csv')
+# compare_two_fucking_csv_files('found_url_2_.csv','urls_of_scraped_emails_.csv')
 
 
 def remove_www_from_domains(input_file):
+
     domains_with_www = []
     domains_without_www = []
     domains = []
