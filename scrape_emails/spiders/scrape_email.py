@@ -43,7 +43,7 @@ class ScrapeEmailSpider(scrapy.Spider):
 
             emailitems = []
 
-            for email in zip(v):
+            for email in zip(v): # used zip function because it returns an iterator
                 emailitem = ScrapeEmailsItem()
                 emailitem['email'] = email
                 emailitem['url'] = response.url

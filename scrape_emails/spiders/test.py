@@ -11,7 +11,7 @@ from scrape_emails.items import ScrapeEmailsItem
 
 
 class TestSpider(scrapy.Spider):
-    name = "errbacks"
+    name = "scrp_emails"
 
     f = open("urls_to_scrape_full_urls.csv")
     start_urls = [url.strip() for url in f.readlines()]
