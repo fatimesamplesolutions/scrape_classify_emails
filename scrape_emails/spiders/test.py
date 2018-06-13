@@ -38,19 +38,30 @@ class TestSpider(scrapy.Spider):
         self.handle_status_codes(response)
 
         selector = response.xpath('//body//*[not(self::script) and not(self::style)]').extract()
+
+        # emails part
         sanitized = ''.join([re.sub(r'^\s+', '', item) for item in selector])
-        pattern = re.compile('([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)')
+        pattern = re.compile(r'([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)')
         emails = pattern.findall(sanitized)
         v = set(emails)
 
-        emailitems = []
+        # phone's part
+        sanitized_phone = ''.join([re.sub(r'[^a-zA-Z\d+\-]+', '', item) for item in selector])  # remove alphanumeric characters, making a list comprehension
+        pattern_phone = re.compile('[\d+\-]{9,12}')
+        numbers_phone = pattern_phone.findall(sanitized_phone)
+        v_phone = set(numbers_phone)
 
-        for email in zip(v):
-            emailitem = ScrapeEmailsItem()
-            emailitem['email'] = email
-            emailitem['url'] = response.url
-            emailitems.append(emailitem)
-            return emailitems
+        allitems = []
+
+        for email,phone in zip(v,v_phone):
+            # singleitem = ScrapeEmailsItem()
+            # singleitem['email'] = email
+            # singleitem['phone'] = phone
+            # singleitem['url'] = response.url
+            # allitems.append(singleitem)
+            # return allitems
+
+            yield {'email': email, 'phone':phone, 'url':response.url}
 
 
     def handle_status_codes(self, response):
